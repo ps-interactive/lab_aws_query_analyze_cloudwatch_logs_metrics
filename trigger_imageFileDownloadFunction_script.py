@@ -8,7 +8,9 @@ aws_secret_access_key = input("Enter the AWS secret access key for your sandbox:
 client = boto3.client(
     'lambda',
     aws_access_key_id=aws_access_key_id,
-    aws_secret_access_key=aws_secret_access_key
+    aws_secret_access_key=aws_secret_access_key,
+    region_name='us-west-2'
+
 )
 
 i = 1
